@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jovi Andra — Broadcast Motion Designer & Video Editor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:Inter;
+background:#030303;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+max-width:1200px;
+padding:16px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(20,20,20,.6);
+backdrop-filter:blur(12px);
+border-radius:40px;
+z-index:1000;
+}
+
+nav a{
+margin-left:24px;
+text-decoration:none;
+color:white;
+opacity:.8;
+}
+
+nav a:hover{opacity:1}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(.35);
+z-index:-1;
+}
+
+.hero h1{
+font-size:64px;
+}
+
+.hero h2{
+font-size:64px;
+}
+
+.hero h3{
+font-size:64px;
+}
+
+.hero p{
+max-width:700px;
+margin-top:20px;
+font-size:20px;
+opacity:.85;
+}
+
+/* SECTIONS */
+
+section{
+padding:140px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:46px;
+margin-bottom:60px;
+letter-spacing:2px;
+}
+
+/* SHOWREEL */
+
+#showreel{
+background:#050505;
+}
+
+.showreel-container{
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+.showreel-container video{
+width:100%;
+border-radius:12px;
+box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+.showreel-desc{
+margin-top:20px;
+opacity:.7;
+}
+
+/* PROJECTS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+gap:60px;
+}
+
+.card{
+overflow:hidden;
+border-radius:14px;
+cursor:pointer;
+position:relative;
+}
+
+.card video{
+width:100%;
+transition:.5s;
+}
+
+.card:hover video{
+transform:scale(1.05);
+}
+
+.project-info{
+position:absolute;
+bottom:0;
+padding:20px;
+background:linear-gradient(transparent,black);
+width:100%;
+}
+
+/* CLIENTS */
+
+#clients{
+background:#050505;
+}
+
+.clients-marquee{
+overflow:hidden;
+}
+
+.clients-track{
+display:flex;
+gap:60px;
+width:200%;
+animation:scroll 35s linear infinite;
+}
+
+.client{
+min-width:180px;
+text-align:center;
+padding:20px;
+border-radius:14px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+}
+
+.client img{
+width:120px;
+opacity:.7;
+filter:grayscale(100%);
+}
+
+.client:hover img{
+filter:none;
+opacity:1;
+}
+
+@keyframes scroll{
+0%{transform:translateX(0)}
+100%{transform:translateX(-50%)}
+}
+
+/* ABOUT */
+
+.resume-btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 32px;
+border:2px solid white;
+border-radius:40px;
+text-decoration:none;
+color:white;
+}
+
+/* CONTACT */
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.contact-btn{
+padding:14px 28px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+color:white;
+}
+
+.email{background:white;color:black}
+.whatsapp{background:#25D366}
+.linkedin{background:#0A66C2}
+
+footer{
+text-align:center;
+padding:60px 0;
+opacity:.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<strong>JOVI ANDRA</strong>
+
+<div>
+<a href="#showreel">Showreels</a>
+<a href="#projects">Projects</a>
+<a href="#clients">Clients</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="video2.mp4">
+</video>
+
+<h1>Broadcast Motion Designer</h1>
+<h2>&</h2>
+<h3>Video Editor</h3>
+
+<p>
+Motion designer experienced in creating broadcast graphics for national television networks, including KompasTV and Global TV.
+</p>
+
+</section>
+
+<!-- SHOWREEL -->
+
+<section id="showreel">
+
+<h2 class="section-title">Showreels</h2>
+
+<div class="showreel-container">
+
+<video controls>
+<source src="jovi-andra-showreel.mp4">
+</video>
+
+<p class="showreel-desc">
+The motion graphics package was integrated into the broadcast segment, providing a modern visual identity and improving clarity of on-screen information.
+</p>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<video muted loop>
+<source src="video2.mp4">
+</video>
+<div class="project-info">
+<h3>Indonesia Vapor Company Profile</h3>
+<p>Client: Indonesia Vapor </p>
+<p>Role: Motion Designer</p>
+<p>Tools: After Effects, Illustrator,Photoshop, Premiere Pro</p>
+</div>
+</div>
+
+<div class="card">
+<video muted loop>
+<source src="video3.mp4">
+</video>
+<div class="project-info">
+<h3>GlobalTV TVC Birthday</h3>
+<p>Client: GlobalTV</p>
+<p>Role:Video Editor</p>
+<p>Tools: After Effects, Illustrator,Photoshop, Premiere Pro</p>
+</div>
+</div>
+
+<div class="card">
+<video muted loop>
+<source src="video4.mp4">
+</video>
+<div class="project-info">
+<h3>Election Broadcast Motion Graphics</h3>
+<p>Client: KompasTV</p>
+<p>Role: Motion Designer</p>
+<p>Tools: After Effects, Illustrator,Photoshop, Premiere Pro</p>
+</div>
+</div>
+
+<div class="card">
+<video muted loop>
+<source src="video5.mp4">
+</video>
+<div class="project-info">
+<h3>Corruption Case Motion Graphics</h3>
+<p>Client: KompasTV</p>
+<p>Role: Motion Designer</p>
+<p>Tools: After Effects,Illustrator,Photoshop, Premiere Pro</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CLIENTS -->
+
+<section id="clients">
+
+<h2 class="section-title">Clients</h2>
+
+<div class="clients-marquee">
+
+<div class="clients-track">
+
+<div class="client">
+<img src="logo-kompas.png">
+<p>KompasTV</p>
+</div>
+
+<div class="client">
+<img src="logo-gtv.png">
+<p>GlobalTV</p>
+</div>
+
+<div class="client">
+<img src="logo-iv.png">
+<p>Indonesia Vapor</p>
+</div>
+
+<div class="client">
+<img src="logo-upods.png">
+<p>UPODS</p>
+</div>
+
+<div class="client">
+<img src="logo-kompas.png">
+<p>KompasTV</p>
+</div>
+
+<div class="client">
+<img src="logo-gtv.png">
+<p>GlobalTV</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About</h2>
+
+<p style="max-width:800px;margin:auto;text-align:center;font-size:20px">
+
+I’m a motion designer specializing in broadcast and digital video graphics. I have experience creating motion systems for television programs and online media, focusing on clear storytelling and strong visual hierarchy.
+
+</p>
+
+<div style="text-align:center">
+
+<a class="resume-btn" href="Jovi_Andra_CV.pdf" download>
+Resume
+</a>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-buttons">
+
+<a class="contact-btn email" href="mailto:jiro.primary@gmail.com">Email</a>
+
+<a class="contact-btn whatsapp" href="https://wa.me/6281510274343">WhatsApp</a>
+
+<a class="contact-btn linkedin" href="https://www.linkedin.com/in/jovi-andra-videoeditor">LinkedIn</a>
+
+</div>
+
+</section>
+
+<footer>
+
+Jovi Andra | Motion Designer | Video Editor
+
+</footer>
+
+</body>
+</html>
